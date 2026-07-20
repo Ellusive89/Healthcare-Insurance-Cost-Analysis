@@ -212,3 +212,49 @@ The project found that:
 These findings could support high-level budgeting, financial forecasting and further exploratory analysis by the imaginary insurance business. Smoking status, age and BMI appear to provide the most useful information for understanding differences in charges.
 
 However, the results represent statistical associations rather than causal evidence. They should not be used to make real insurance-pricing, eligibility or healthcare decisions. Any real-world application would require more representative data, independent validation, fairness testing, legal and ethical review, and professional human oversight.
+
+## Limitations
+
+- The dataset is small and may not be representative
+- Its collection date and sampling process may be limited or unclear
+- Only four broad regions are available
+- Important medical, treatment and insurance-plan information is missing
+- Smoking is represented by a simple binary category
+- Recorded sex is limited to two categories
+- The analysis is observational
+- Only one regression algorithm and one train-test split were evaluated
+- No independent real-world validation was performed
+
+## Possible Improvements
+
+Future development could:
+
+- use larger and more recent data
+- apply cross-validation
+- compare several regression algorithms
+- investigate a transformation of `charges`
+- model interactions between BMI, age and smoking
+- test model errors across demographic groups
+- conduct formal fairness and bias evaluations
+- validate the model using independent data
+
+## Technologies Used
+
+- Python
+- pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- scikit-learn
+- Jupyter Notebook
+- Visual Studio Code
+- Git
+- GitHub
+
+## Running the Project
+
+Run the notebooks in this order:
+Data_Collection_and_Cleaning.ipynb
+Data_Analysis_and_Visualisation.ipynb
+
+Notebook: Data_Collection_and_Cleaning must run first because it creates the processed CSV used by Notebook: Data_Analysis_and_Visualisation.
