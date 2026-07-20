@@ -1,5 +1,37 @@
 # Healthcare Insurance Cost Analysis
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Business Case](#business-case)
+- [Target Audience](#target-audience)
+- [Business Requirements](#business-requirements)
+- [Dataset](#dataset)
+  - [Dataset Storage](#dataset-storage)
+- [Ethical and Privacy Considerations](#ethical-and-privacy-considerations)
+- [Project Structure](#project-structure)
+- [Analysis Workflow](#analysis-workflow)
+- [Visualisation Findings](#visualisation-findings)
+  - [Distribution of Charges](#distribution-of-charges)
+  - [Smoking Status](#smoking-status)
+  - [BMI and Smoking](#bmi-and-smoking)
+  - [Age and Charges](#age-and-charges)
+  - [Regional Charges](#regional-charges)
+  - [Recorded Sex and Dependants](#recorded-sex-and-dependants)
+  - [Correlation Analysis](#correlation-analysis)
+- [Predictive Analysis](#predictive-analysis)
+  - [Model Results](#model-results)
+- [Conclusions](#conclusions)
+- [Limitations](#limitations)
+- [Possible Improvements](#possible-improvements)
+- [Technologies Used](#technologies-used)
+- [How Data Analytics Addresses the Business Challenge](#how-data-analytics-addresses-the-business-challenge)
+- [Running the Project](#running-the-project)
+- [Testing and Validation](#testing-and-validation)
+- [Credits](#credits)
+- [Use of AI Tools](#use-of-ai-tools)
+- [Acknowledgements](#acknowledgements)
+
 ## Project overview
 
 This project investigates how demographic, lifestyle and geographic
