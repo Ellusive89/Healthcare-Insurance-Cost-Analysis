@@ -167,3 +167,48 @@ Age had a weaker positive correlation of approximately 0.30, while BMI had a cor
 
 Correlation measures statistical association and does not establish causation. Other recorded and unrecorded characteristics could contribute to these relationships.
 
+## Predictive Analysis
+
+A linear regression pipeline was created using:
+
+- age
+- BMI
+- number of dependants
+- recorded sex
+- smoking status
+- region
+
+Categorical variables (sex, smoking status and region) were converted into numerical indicator (0/1) variables so they could be used by the linear regression model. The data was split into 80% training data and 20% test data.
+
+### Model Results
+
+| Approach | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Median baseline | $9,294 | $14,442 | -0.135 |
+| Linear regression | $4,177 | $5,956 | 0.807 |
+
+The linear regression model performed substantially better than the median baseline. Its Mean Absolute Error decreased from approximately $9,294 to $4,177, representing a reduction of more than 50%. Its Root Mean Squared Error was also considerably lower.
+
+The model achieved an R² score of 0.807, meaning that it explained approximately 80.7% of the variation in insurance charges within the test data. In comparison, the baseline had a negative R² score of -0.135, showing that it performed worse than predicting the mean of the test charges.
+
+Although the linear regression model performed well for a simple introductory model, meaningful errors remained. Its MAE indicates that predictions differed from the actual charges by approximately $4,177 on average. The actual-versus-predicted chart also showed that the model underestimated some of the highest charges.
+
+The model is therefore useful as an educational demonstration but is not suitable for real insurance quotations, pricing, eligibility decisions or customer-level decision-making.
+
+## Conclusions
+
+The project found that:
+
+- insurance charges were strongly right-skewed, with most customers having lower charges and a smaller group having substantially higher charges
+- smoking status had the strongest association with insurance charges, with smokers having a median charge of approximately $34,456 compared with approximately $7,346 for non-smokers
+- charges generally increased with age, although the relationship was relatively weak and age alone could not explain the variation between customers
+- BMI provided additional information, particularly when considered together with smoking status. Customers with obesity who smoked had the highest median charges
+- the southeast had the highest average regional charge, at approximately $14,735, while the southwest had the lowest average
+- recorded sex and number of dependants did not show a consistent overall relationship with charges. Average charges generally increased from zero to three dependants before decreasing at five, while differences between the recorded sex categories varied across the dependant groups
+- results for four and five dependants should be interpreted carefully because these groups contained relatively few customers
+- the linear regression model substantially outperformed the median baseline and explained approximately 80.7% of the variation in the test charges
+- despite its performance, the model continued to make meaningful errors and underestimated some of the highest charges
+
+These findings could support high-level budgeting, financial forecasting and further exploratory analysis by the imaginary insurance business. Smoking status, age and BMI appear to provide the most useful information for understanding differences in charges.
+
+However, the results represent statistical associations rather than causal evidence. They should not be used to make real insurance-pricing, eligibility or healthcare decisions. Any real-world application would require more representative data, independent validation, fairness testing, legal and ethical review, and professional human oversight.
