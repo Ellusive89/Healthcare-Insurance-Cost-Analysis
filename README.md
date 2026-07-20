@@ -258,3 +258,41 @@ Data_Collection_and_Cleaning.ipynb
 Data_Analysis_and_Visualisation.ipynb
 
 Notebook: Data_Collection_and_Cleaning must run first because it creates the processed CSV used by Notebook: Data_Analysis_and_Visualisation.
+
+## Testing and Validation
+
+The project was tested by:
+
+- restarting and running both notebook kernels from beginning to end
+- verifying required columns
+- checking missing values and duplicate records
+- validating numerical ranges and category values
+- confirming that the processed CSV was created
+- confirming that Notebook:Data_Analysis_and_Visualisation loaded the processed data
+- checking that all charts rendered
+- checking chart interpretations against summary tables
+- comparing the regression model with a median baseline
+- confirming that no notebook cells produced errors
+
+## Credits
+
+- Dataset: [kaggle:Healthcare Insurance](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance)
+- Learning materials: [Code Institute](https://codeinstitute.net/)
+- Python library documentation:
+  - [pandas](https://pandas.pydata.org/docs/)
+  - [Matplotlib](https://matplotlib.org/stable/)
+  - [Seaborn](https://seaborn.pydata.org/)
+  - [scikit-learn](https://scikit-learn.org/stable/)
+- AI learning assistance: OpenAI Codex, ChatGPT
+
+## Use of AI Tools
+
+ - break the project into manageable stages
+ - identify appropriate business requirements
+ - explaining the code and debugging
+ - structure the narration and data story around the results
+ - improve the clarity of the conclusions, limitations and README documentation
+
+ AI suggestions were checked by running the code and comparing the explanations with the actual tables, charts and model results. For example, AI-assisted code for the regional chart initially produced a Matplotlib error, so the implementation was simplified and tested again successfully.
+
+AI supported the learning process, but the learner remained responsible for understanding the code, making decisions and ensuring that the conclusions accurately represented the results.
