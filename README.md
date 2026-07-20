@@ -180,6 +180,12 @@ A linear regression pipeline was created using:
 
 Categorical variables (sex, smoking status and region) were converted into numerical indicator (0/1) variables so they could be used by the linear regression model. The data was split into 80% training data and 20% test data.
 
+## How Data Analytics Addresses the Business Challenge
+
+Descriptive analytics was used to identify patterns in historical charges across customer groups. Predictive analytics was then used to test whether the available characteristics could estimate charges more effectively than a simple baseline.
+
+These methods could support high-level budgeting and financial forecasting. AI also supported the development and communication workflow, but all outputs required human review and should not be used for automated customer decisions.
+
 ### Model Results
 
 | Approach | MAE | RMSE | R² |
@@ -253,6 +259,20 @@ Future development could:
 
 ## Running the Project
 
+1. Clone the repository and open it in Visual Studio Code.
+2. Create a virtual environment:
+```bash
+python -m venv .venv
+```
+3. Activate it on macOS or Linux:
+```bash
+source .venv/bin/activate
+```
+4. Install the required packages:
+```bash
+python -m pip install -r requirements.txt
+```
+5. Select the .venv Python kernel in Visual Studio Code
 Run the notebooks in this order:
 Data_Collection_and_Cleaning.ipynb
 Data_Analysis_and_Visualisation.ipynb
@@ -295,4 +315,9 @@ The project was tested by:
 
  AI suggestions were checked by running the code and comparing the explanations with the actual tables, charts and model results. For example, AI-assisted code for the regional chart initially produced a Matplotlib error, so the implementation was simplified and tested again successfully.
 
-AI supported the learning process, but the learner remained responsible for understanding the code, making decisions and ensuring that the conclusions accurately represented the results.
+AI supported the learning process, but I remained responsible for understanding the code, making decisions and ensuring that the conclusions accurately represented the results.
+
+## Acknowledgements
+
+Thanks to Code Institute, facilitators and learning resources for guidance during this project.
+A special thank you to my partner for keeping me sane, motivated and supported throughout this challenging process. Your patience and encouragement helped me keep going, especially when the project felt overwhelming.
