@@ -11,6 +11,7 @@
 - [Ethical and Privacy Considerations](#ethical-and-privacy-considerations)
 - [Project Structure](#project-structure)
 - [Analysis Workflow](#analysis-workflow)
+  - [Interactive Plotly Visualisations](#interactive-plotly-visualisations)
 - [Visualisation Findings](#visualisation-findings)
   - [Distribution of Charges](#distribution-of-charges)
   - [Smoking Status](#smoking-status)
@@ -149,6 +150,20 @@ High charge values were retained when they appeared plausible because they may r
 9. Trains and evaluates a linear regression model.
 10. Presents conclusions and limitations.
 
+### Interactive Plotly Visualisations
+
+The analysis notebook includes four different interactive Plotly graph types:
+
+1. A histogram showing the distribution of insurance charges.
+2. A box plot comparing charges by smoking status.
+3. A scatter plot examining age, charges and smoking status.
+4. A bar chart comparing average charges by region.
+
+These figures support hover details, zooming, panning, legend filtering where
+applicable and image downloads through the Plotly modebar. The remaining
+Matplotlib and Seaborn figures provide additional static analysis, including
+grouped comparisons, the correlation heatmap and model evaluation.
+
 ## Visualisation Findings
 
 ### Distribution of charges
@@ -283,6 +298,7 @@ Future development could:
 - NumPy
 - Matplotlib
 - Seaborn
+- Plotly
 - scikit-learn
 - Jupyter Notebook
 - Visual Studio Code
@@ -322,6 +338,8 @@ The project was tested by:
 - confirming that the processed CSV was created
 - confirming that Notebook:Data_Analysis_and_Visualisation loaded the processed data
 - checking that all charts rendered
+- testing hover details, zooming, legend filtering and modebar controls on the
+  four interactive Plotly figures
 - checking chart interpretations against summary tables
 - comparing the regression model with a median baseline
 - confirming that no notebook cells produced errors
