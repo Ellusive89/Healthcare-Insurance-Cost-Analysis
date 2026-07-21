@@ -362,10 +362,18 @@ The project was tested by:
  - explaining the code and debugging
  - structure the narration and data story around the results
  - improve the clarity of the conclusions, limitations and README documentation
+ - cross-referencing my project against the assessment requirements
+ - reviewing code for possible errors and opportunities for improvement
 
- AI suggestions were checked by running the code and comparing the explanations with the actual tables, charts and model results. For example, AI-assisted code for the regional chart initially produced a Matplotlib error, so the implementation was simplified and tested again successfully.
+ Cross-referencing the project with the assessment criteria was particularly useful. This review showed that although my notebook contained several graph types created with Matplotlib and Seaborn, I had completely missed the requirement to include at least three different interactive graph types using Plotly.
 
-AI supported the learning process, but I remained responsible for understanding the code, making decisions and ensuring that the conclusions accurately represented the results.
+After identifying this gap, I added four interactive Plotly visualisations: a histogram, box plot, scatter plot and bar chart. These graphs allow users to explore the results using hover information, zooming, panning and legend controls where applicable.
+
+AI also assisted with converting selected static visualisations to Plotly and identifying that the `nbformat` package was required to display Plotly figures correctly inside the notebook. I reviewed the suggested code, ran the complete notebook and confirmed that all four interactive visualisations rendered without errors.
+
+AI suggestions were treated as recommendations rather than accepted automatically. For example, AI-assisted code for the regional chart initially produced a Matplotlib error. I simplified the implementation, tested it again and checked the result against the underlying summary table.
+
+All interpretations were checked against the actual tables, charts and model results. I remained responsible for understanding the code, deciding which suggestions to use, testing the implementation and ensuring that the final conclusions accurately represented the data.
 
 ## Acknowledgements
 
