@@ -102,6 +102,7 @@ Important considerations include:
 
 ## Project Structure
 
+```text
 Healthcare-Insurance-Cost-Analysis/
 ├── data/
 │   ├── raw/
@@ -114,6 +115,7 @@ Healthcare-Insurance-Cost-Analysis/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
 
 ## Analysis Workflow
 
