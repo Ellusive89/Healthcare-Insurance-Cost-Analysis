@@ -170,11 +170,15 @@ grouped comparisons, the correlation heatmap and model evaluation.
 
 ### Distribution of charges
 
+![Interactive histogram showing the distribution of insurance charges](assets/images/charges-distribiution.png)
+
 The insurance charges were strongly right-skewed, meaning that most customers had charges in the lower part of the range, while a smaller number had very high charges. Most recorded charges were approximately between $2,000 and $15,000, with the highest concentration below $10,000. A smaller number of customers had charges above $50,000.
 
 The mean charge was approximately $13,270, while the median was approximately $9,386. The higher mean shows that the relatively small number of high-charge observations pulled the average upward.
 
 ### Smoking status
+
+![Box plot comparing insurance charges by smoking status](assets/images/charges-by-smoking.png)
 
 Customers recorded as smokers had considerably higher median charges than non-smokers. The median charge for smokers was approximately $34,456, compared with approximately $7,346 for non-smokers.
 
@@ -182,11 +186,15 @@ Smoking status produced one of the clearest differences in the analysis. The smo
 
 ### BMI and smoking
 
+![Chart compares typical insurance charges across BMI categories](assets/images/charges-by-bmi-and-smoking.png)
+
 Customers with obesity who smoked had the highest median charge, at approximately $41,000. Underweight non-smokers had the lowest median charge, at approximately $3,500–$4,000.
 
 This comparison suggests that examining BMI and smoking status together provides more information than examining either characteristic alone. However, the underweight category contained relatively few customers, and the observed differences do not establish that BMI or smoking caused the charges.
 
 ### Age and charges
+
+![Interactive scatter plot examines the relationship between age and charges while distinguishing smoking status](assets/images/charges-by-age-and-smoking.png)
 
 Charges generally increased with age. The correlation between age and charges was approximately 0.30, indicating a weak positive relationship.
 
@@ -194,11 +202,15 @@ Considerable variation remained between customers of similar ages, particularly 
 
 ### Regional charges
 
+![Interactive bar chart compares average charges across regions](assets/images/charges-by-region.png)
+
 The southeast had the highest average charge, at approximately $14,735. The southwest had the lowest average charge, while the northwest had a similarly low average.
 
 Regional differences may reflect differences in smoking status, age, BMI, group size or other unrecorded factors rather than a direct geographical effect.
 
 ### Recorded Sex and Dependants
+
+![Chart compares charges by recorded sex and number of dependants](assets/images/charges-by-sex-and-dependants.png)
 
 Average charges did not follow a consistent pattern as the number of recorded dependants changed. They generally increased from zero to three dependants, remained at a similar level for four, and then decreased for five dependants.
 
@@ -207,6 +219,8 @@ Males with three dependants had the highest average charge, at approximately $16
 Differences between the recorded sex categories were moderate and inconsistent. Males had higher averages for zero to three dependants, while females had slightly higher averages for four and five dependants. However, the groups with four and five dependants contained only 25 and 18 customers respectively, so their averages should be interpreted carefully.
 
 ### Correlation Analysis
+
+![Heatmap shows correlation of insurance features](assets/images/correlation-heatmap.png)
 
 The feature most strongly correlated with charges was `smoker_yes`, with a correlation coefficient of approximately 0.79. This represents a strong positive association between being recorded as a smoker and having higher insurance charges.
 
@@ -217,6 +231,8 @@ Age had a weaker positive correlation of approximately 0.30, while BMI had a cor
 Correlation measures statistical association and does not establish causation. Other recorded and unrecorded characteristics could contribute to these relationships.
 
 ## Predictive Analysis
+
+![Scatterplot of actual versus predicted insurance charges](assets/images/model-predictions.png)
 
 A linear regression pipeline was created using:
 
